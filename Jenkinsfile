@@ -1,6 +1,8 @@
 node {
   stage('SCM') {
     checkout scm
+    echo $JAVA_HOME$
+    eco $PATH$
   }
   stage('SonarQube Analysis') {
     echo $JAVA_HOME$
